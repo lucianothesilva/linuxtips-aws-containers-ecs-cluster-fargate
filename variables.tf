@@ -36,3 +36,10 @@ variable "cluster_on_demand_min_size" {}
 variable "cluster_on_demand_max_size" {}
 
 variable "cluster_on_demand_desired_size" {}
+
+variable "capacity_providers" {
+  type = list
+  default = [
+    "FARGATE", "FARGATE_SPOT"
+  ]
+}
